@@ -29,7 +29,8 @@
     }
 
     .card {
-      width: 400px;
+      width: 320px;
+      max-width: 400px;
       background-color: white;
       border-radius: 20px;
       border: 1px solid black;
@@ -71,6 +72,7 @@
     }
 
     .card-desc{
+      font-size: 13px;
       color: hsl(0, 0%, 42%);
       padding-right: 25px;
       line-height: 1.8;
@@ -90,4 +92,10 @@
 
     .user__name{
       font-weight: 800;
+    }
+
+    @media (max-width:376px) {
+      .card-desc{
+        padding-right: 0;
+      }
     }
